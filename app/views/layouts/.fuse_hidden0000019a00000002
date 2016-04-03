@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title
+      | MyBlog
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .container
+      = render 'layouts/header'
+      .row
+        .col-md-8
+          = yield
+        .col-md-4
+          = render 'layouts/side_bar'
