@@ -1,0 +1,5 @@
+ = render "layouts/new_status"
+ = @posts.each do |post|
+ 	.post-item
+	 	h3 = post.title
+	 	p = post.content
