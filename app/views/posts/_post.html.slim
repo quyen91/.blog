@@ -1,0 +1,6 @@
+post-item
+ 	h3 = post.title
+ 	p = post.content
+ 	small = post.created_at.strftime("%A, %d %B %Y")
+ 	br
+ 	= link_to "Edit", edit_post_path(post)

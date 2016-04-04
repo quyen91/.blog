@@ -1,0 +1,13 @@
+h1 What in your mind
+= form_for @post_new, :remote => "true" do |f|
+	.field
+		= f.label :title
+		br
+		= f.text_field  :title , autofocus: true, class: 'form-control'
+	.field
+		= f.label :content
+		br
+		= f.text_area :content, autofocus: true, class: 'form-control'
+	.action
+		= f.submit "Post" , class: 'btn btn-primary'
+
