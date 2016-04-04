@@ -1,5 +1,10 @@
- = render "layouts/new_status"
- = @posts.each do |post|
+= render "layouts/new_status"
+#post-area
+ = paginate @posts
+ - @posts.each do |post|
  	.post-item
 	 	h3 = post.title
 	 	p = post.content
+	 	small = post.created_at.strftime("%A, %d %B %Y")
+	 	br
+	 	= link_to "Edit", edit_post_path(post)

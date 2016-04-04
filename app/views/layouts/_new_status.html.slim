@@ -1,5 +1,5 @@
 h1 What in your mind
-= form_for(@post_new) do |f|
+= form_for @post_new, :remote => "true" do |f|
 	.field
 		= f.label :title
 		br
