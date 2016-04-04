@@ -1,0 +1,3 @@
+
+// / append new post to end page
+$("#post-area").prepend("<%= j render partial: 'posts/post', locals: { post: @post } %>")
