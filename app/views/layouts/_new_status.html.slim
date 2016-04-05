@@ -4,6 +4,10 @@ h1 What in your mind
 		= f.label :title
 		br
 		= f.text_field  :title , autofocus: true, class: 'form-control'
+	.field 
+		= f.label :tag
+		br
+		= f.text_field :tag_names, class: 'form-control'
 	.field
 		= f.label :content
 		br

@@ -4,3 +4,5 @@
  	small = post.created_at.strftime("%A, %d %B %Y")
  	br
  	= link_to "Edit", edit_post_path(post)
+ 	br
+ 	= post.list_tags
