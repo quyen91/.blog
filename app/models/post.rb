@@ -6,6 +6,14 @@ class Post < ActiveRecord::Base
 	attr_accessor :tag_names
 	after_save :assign_tags
 
+	def self.tagged_with(name)
+		Tag.find_by_name!(name).posts
+	end
+	
+	def list_tags
+		tags.map(&:name).join(", ")
+	end
+
 	private
 	def assign_tags
 		if @tag_names
@@ -15,7 +23,5 @@ class Post < ActiveRecord::Base
 			end
 		end
 	end
-	def list_tags
-		self.tags.map(&:name).join(", ")
-	end
+	
 end
