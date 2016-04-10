@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+
   devise_for :users
   root "posts#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  resources :gallery
   resources :posts
   get 'tags/:tag', to: 'posts#index', as: "tag"
   # You can have the root of your site routed with "root"
