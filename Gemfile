@@ -32,6 +32,8 @@ gem 'fog'
 gem 'mini_magick'
 gem 'aws-sdk', '< 2'
 gem 'filepicker-rails', '~>2.1.0'
+# other image upload
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # user authentication
 gem 'devise'

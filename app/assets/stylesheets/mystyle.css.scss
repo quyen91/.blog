@@ -1,6 +1,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body{
+	background: rgb(241, 241, 241) none repeat scroll 0% 0%;
+}
 
 h1.big-title{
 	background: purple;
@@ -11,7 +14,7 @@ h1.big-title{
 textarea { resize: vertical; }
 
 .post-item{
-	background: rgb(241, 241, 241) none repeat scroll 0% 0%;
+	background: white none repeat scroll 0% 0%;
 	padding: 10px;
 	margin-bottom: 15px;
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
@@ -34,6 +37,7 @@ textarea { resize: vertical; }
 }
 
 #new-status{
+	background: white;
 	padding: 20px;
 	border: solid 1px rgb(241, 241, 241);
 	border-radius: 10px;

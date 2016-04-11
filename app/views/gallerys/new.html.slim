@@ -1,0 +1,5 @@
+.new_photo
+	= form_for(@gallery, html: { multipart: :true}) do |f|
+		= f.label :Add_your_image
+		= f.file_field :image
+
