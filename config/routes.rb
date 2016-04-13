@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+  get 'dashboard/index'
+  end
+
   devise_for :users
   root "posts#index"
 
@@ -8,6 +12,14 @@ Rails.application.routes.draw do
   resources :gallerys
   resources :posts
   get 'tags/:tag', to: 'posts#index', as: "tag"
+
+
+  namespace :admin do
+  get '', to: 'dashboard#index', as: '/'
+  resources :posts
+  end
+
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

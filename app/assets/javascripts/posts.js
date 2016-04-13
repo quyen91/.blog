@@ -1,9 +1,8 @@
 $(document).ready(function(){
+	alert("dd");
 	$("#new_status").submit(function(){
+		// $("#new_status").val('');
 		event.preventDefault();
 	});
 
-	// $("#new_message").bind("ajax:complete", function(event,xhr,status){
- //  	$('#message_content').val('');
-	// }
 });
