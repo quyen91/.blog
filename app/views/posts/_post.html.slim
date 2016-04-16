@@ -1,9 +1,11 @@
 .post-item
-  h3 = post.title
+  h3 
+   = link_to "#{post.title}", post_path(post.id)
   p = post.content
   small = post.created_at.strftime("%A, %d %B %Y")
   br
   = link_to "Edit", edit_post_path(post)
+  = link_to "Delete", edit_post_path(post)
   br
   .post-tag
    = raw tag_links(post.list_tags) 

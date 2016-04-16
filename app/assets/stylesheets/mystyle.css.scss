@@ -10,6 +10,9 @@ h1.big-title{
 	color: white;
 	padding: 10px;
 	margin: 0 auto;
+	a{
+		color: white;
+	}
 }
 textarea { resize: vertical; }
 
@@ -44,5 +47,14 @@ textarea { resize: vertical; }
 	margin-bottom: 20px;
 	.field{
 		margin-bottom: 10px;
+	}
+}
+#footer{
+	background: purple;
+	color: white;
+	height: 50px;
+	text-align: center;
+	p {
+		line-height: 48px;
 	}
 }
