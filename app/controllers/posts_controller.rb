@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   	@post = Post.new
   end
   def show
+    @post = Post.find[params[:id]]
   end
   def create
     @post = Post.new(post_params)
@@ -30,6 +31,8 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id]);
   end
   def update
+    @post = Post.find(params[:id]);
+    # if @post.update_attributes(post_params)
   end
   private
   def post_params
