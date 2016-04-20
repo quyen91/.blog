@@ -5,9 +5,4 @@ class Admin::PostsController < Admin::ApplicationController
   def new
     @post = Post.new
   end
-  
-  private
-  def post_params
-    params.require[:post].permit(:title, :content, :tag_names)
-  end
 end
