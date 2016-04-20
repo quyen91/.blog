@@ -45,6 +45,10 @@ textarea { resize: vertical; }
     top: 14px;
   }
 }
+.gallery-item{
+  padding: 20px;
+  float: left;
+}
 
 #new-status{
   background: white;
@@ -90,7 +94,7 @@ textarea { resize: vertical; }
   max-width:300px;
   margin-right: 0;
   margin-left: 0;
-} 
+}
 
 .navbar-nav,
 .navbar-nav > li,

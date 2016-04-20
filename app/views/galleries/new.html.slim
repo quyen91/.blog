@@ -1,0 +1,10 @@
+= form_for(@gallery, html: { multipart: true}) do |f|
+  .field
+    = f.label :caption
+    = f.text_field :caption
+
+  .field
+    = f.label :image
+    = f.file_field :image_file
+  .action
+    = f.submit "Upload", class: "btn btn-primary"

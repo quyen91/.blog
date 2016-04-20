@@ -3,19 +3,19 @@ class PostsController < ApplicationController
     @post_new = Post.new
     if params[:tag]
       @posts = Post.tagged_with(params[:tag]).order(created_at: :desc).page(params[:page]).per(10)
-    else 
-    	@posts = Post.order(created_at: :desc).page(params[:page]).per(10)
+    else
+      @posts = Post.order(created_at: :desc).page(params[:page]).per(10)
     end
   end
   def new
-  	@post = Post.new
+    @post = Post.new
   end
   def show
     @post = Post.find(params[:id])
   end
   def create
     @post = Post.new(post_params)
-    
+
     respond_to do |format|
       if @post.save
         # format.html { redirect_to @post, notice: "Post created successfully"}

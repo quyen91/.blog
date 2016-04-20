@@ -1,0 +1,9 @@
+div.action-gallery
+  = link_to "Upload a photo", new_gallery_path ,class: "btn btn-primary"
+- @galleries.each do |photo|
+  .gallery-item
+    .section-caption
+      = photo.caption
+    .section-photo
+      = image_tag photo.image_file, size: "300"
+
