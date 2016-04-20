@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title
+      | My AdminPage
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .container
+      = render 'layouts/header'
+      - flash.each do |name, message|
+        = message
+      .row
+        .col-md-3
+          = render 'layouts/admin_left_bar'
+        .col-md-9
+          = yield
+      = render 'layouts/footer'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => false

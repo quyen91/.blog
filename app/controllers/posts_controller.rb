@@ -34,6 +34,11 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id]);
     # if @post.update_attributes(post_params)
   end
+  def destroy
+    Post.find(params[:id]).destroy
+    flash[:success] = "You delete success a post!"
+    redirect_to root_url
+  end
   private
   def post_params
     params.require(:post).permit(:title, :content, :tag_names)

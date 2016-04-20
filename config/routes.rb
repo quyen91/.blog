@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   namespace :admin do
+  get 'post/new'
+  end
+
+  namespace :admin do
   get 'dashboard/index'
   end
 
@@ -17,6 +21,7 @@ Rails.application.routes.draw do
   namespace :admin do
   get '', to: 'dashboard#index', as: '/'
   resources :posts
+  resources :tags
   end
 
 
