@@ -2,59 +2,66 @@
 @import "bootstrap";
 
 body{
-	background: rgb(241, 241, 241) none repeat scroll 0% 0%;
+  background: rgb(241, 241, 241) none repeat scroll 0% 0%;
 }
 
 h1.big-title{
-	background: purple;
-	color: white;
-	padding: 10px;
-	margin: 0 auto;
-	a{
-		color: white;
-	}
+  background: purple;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  a{
+    color: white;
+  }
 }
 textarea { resize: vertical; }
 
 .post-item{
-	background: white none repeat scroll 0% 0%;
-	padding: 10px;
-	margin-bottom: 15px;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
-	h3{
-		margin-top: 0;
-	}
-	.post-tag a{
-	  background-color: #3498DB;
-		display: inline;
-		padding: 0.2em 0.6em 0.3em;
-		font-size: 75%;
-		font-weight: bold;
-		line-height: 1;
-		color: #FFF;
-		text-align: center;
-		white-space: nowrap;
-		vertical-align: baseline;
-		border-radius: 0.25em;
-	}
+  position: relative;
+  background: white none repeat scroll 0% 0%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
+  h3{
+    margin-top: 0;
+  }
+  .post-tag a{
+    background-color: #3498DB;
+    display: inline;
+    padding: 0.2em 0.6em 0.3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #FFF;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25em;
+  }
+  small{
+    display: block;
+    position: absolute;
+    right: 11px;
+    top: 14px;
+  }
 }
 
 #new-status{
-	background: white;
-	padding: 20px;
-	border: solid 1px rgb(241, 241, 241);
-	border-radius: 10px;
-	margin-bottom: 20px;
-	.field{
-		margin-bottom: 10px;
-	}
+  background: white;
+  padding: 20px;
+  border: solid 1px rgb(241, 241, 241);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  .field{
+    margin-bottom: 10px;
+  }
 }
 #footer{
-	background: purple;
-	color: white;
-	height: 50px;
-	text-align: center;
-	p {
-		line-height: 48px;
-	}
+  background: purple;
+  color: white;
+  height: 50px;
+  text-align: center;
+  p {
+    line-height: 48px;
+  }
 }
