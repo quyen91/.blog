@@ -11,12 +11,14 @@ nav.navbar.navbar-default[role="navigation"]
   .collapse.navbar-collapse.navbar-ex1-collapse
     ul.nav.navbar-nav
       li.active
-        = link_to "Post", admin_posts_url
+        = link_to "Posts", admin_posts_url
       li
-        = link_to "Tag", admin_tags_url
+        = link_to "Tags", admin_tags_url
+      li
+        = link_to "Categories", admin_categories_url
       li.dropdown
         a.dropdown-toggle[href="#" data-toggle="dropdown"]
-          | Dropdown 
+          | Dropdown
           b.caret
         ul.dropdown-menu
           li
@@ -45,7 +47,7 @@ nav.navbar.navbar-default[role="navigation"]
           | Link
       li.dropdown
         a.dropdown-toggle[href="#" data-toggle="dropdown"]
-          | Dropdown 
+          | Dropdown
           b.caret
         ul.dropdown-menu
           li

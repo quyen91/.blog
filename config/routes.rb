@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '', to: 'dashboard#index', as: '/'
   resources :posts
   resources :tags
+  resources :categories
   end
 
 

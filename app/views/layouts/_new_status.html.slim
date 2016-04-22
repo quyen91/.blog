@@ -1,18 +1,18 @@
 h3 What in your mind ?
 #new-status
-	= form_for @post_new, :remote => "true" do |f|
-		.field
-			= f.label :title
-			br
-			= f.text_field  :title , autofocus: true, class: 'form-control'
-		.field	
-			= f.label :content
-			br
-			= f.text_area :content, autofocus: true, class: 'form-control', resize: :none
-		.field 
-			= f.label :tag
-			br
-			= f.text_field :tag_names, class: 'form-control'
-		.action
-			= f.submit "Post" , class: 'btn btn-primary'
+  = form_for @post_new, :remote => "true" do |f|
+    .field
+      = f.label :title
+      br
+      = f.text_field  :title , autofocus: true, class: 'form-control'
+    .field
+      = f.label :content
+      br
+      = f.text_area :content, autofocus: true, class: 'form-control', resize: :none
+    .field
+      = f.label :tag
+      br
+      = f.text_field :tag_names, class: 'form-control'
+    .action
+      = f.submit "Post" , class: 'btn btn-primary'
 

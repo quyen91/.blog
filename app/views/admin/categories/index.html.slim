@@ -1,0 +1,11 @@
+.page-action
+  = link_to "create", new_admin_post_url, class: "btn btn-primary"
+table.table.table-condensed
+ tr Id
+ tr Name
+ tr Action
+ - @categories.each do |category|
+  tr
+    td category.id
+    td category.name
+    td Active
