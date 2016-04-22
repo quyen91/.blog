@@ -7,6 +7,9 @@ module ApplicationHelper
     end
   end
   def categories_list
-
+    content_tag :ul do
+      Category.all.collect {|item| concat(content_tag(:li, link_to(item.name, "#")))}
+   end
   end
+
 end
