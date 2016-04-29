@@ -1,0 +1,4 @@
+
+// / append new post to end page
+$(".table#category-list").append("<%= j render partial: 'admin/categories/category', locals: { category: @category } %>")
+$('#new_category')[0].reset();

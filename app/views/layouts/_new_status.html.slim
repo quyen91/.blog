@@ -13,6 +13,9 @@ h3 What in your mind ?
       = f.label :tag
       br
       = f.text_field :tag_names, class: 'form-control'
+    / .field
+    /   = f.label :category
+    /   = select("post", "person_id", Person.all.collect {|p| [ p.name, p.id ] }, {prompt: 'Select Person'})
     .action
       = f.submit "Post" , class: 'btn btn-primary'
 

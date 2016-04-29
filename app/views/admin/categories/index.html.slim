@@ -1,11 +1,21 @@
 .page-action
-  = link_to "create", new_admin_post_url, class: "btn btn-primary"
-table.table.table-condensed
- tr Id
- tr Name
- tr Action
- - @categories.each do |category|
+  = link_to "Add new",'#add-new-category' , class: "btn btn-primary", data:{toggle: "collapse"}, role: "button"
+.collapse#add-new-category
+  .well
+    = form_for [:admin ,@category_new ], remote: true do |f|
+      .field
+        = f.label :name
+        = f.text_field :name
+      .action
+        = f.submit "Add", class: 'btn btn-primary'
+
+table.table.table-condensed#category-list
   tr
-    td category.id
-    td category.name
-    td Active
+   td
+   td Id
+   td Name
+   td Status
+   td Action
+  #category-list
+    = render @categories
+

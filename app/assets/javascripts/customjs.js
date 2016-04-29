@@ -4,5 +4,9 @@ $('document').ready(function() {
     e.preventDefault();
     e.stopPropagation();
   });
+  $('#new_category')..submit(function(e){
+    e.preventDefault();
+    e.stopPropagation();
+  });
 
 });

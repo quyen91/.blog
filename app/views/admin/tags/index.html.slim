@@ -1,14 +1,15 @@
 .page-action
   = link_to "create", new_admin_post_url, class: "btn btn-primary"
 table.table.table-condensed
- tr Id
- tr Name
- tr Action
- - @tags.each do |tag|
- 	tr
-		td = tag.id
-		td = tag.name
-		td 
-			= link_to "Edit", "#"
-			|, 
-			= link_to "Delete", "#"
+  tr
+   td Id
+   td Name
+   td Action
+   - @tags.each do |tag|
+    tr
+      td = tag.id
+      td = tag.name
+      td
+        = link_to "Edit", "#"
+        |,
+        = link_to "Delete", "#"

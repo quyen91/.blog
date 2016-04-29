@@ -1,0 +1,11 @@
+tr
+  td
+    span
+      input[type="checkbox" aria-label="..."]
+  td = category.id
+  td = category.name
+  td Active
+  td
+    = link_to "Edit", "#"
+    |,
+    = link_to "Delete", [:admin, category], method: :delete, data: {confirm: "Are you sure?"}
